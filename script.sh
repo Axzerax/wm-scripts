@@ -9,8 +9,8 @@ read question
 if [ $question == "y" ]; then
   echo "Starting.."
 
-  pacman -Syu -y
-  pacman -S ghc picom patch make firefox fish xorg xorg-xrdb xterm polybar lightdm-gtk-greeter wget pulseaudio ttf-font-awesome alsa-utils lightdm htop nitrogen dhcpcd alacritty xmonad xmonad-contrib -y
+  sudo pacman -Syu -y
+  sudo pacman -S ghc picom patch make firefox fish xorg xorg-xrdb xterm polybar lightdm-gtk-greeter wget pulseaudio ttf-font-awesome alsa-utils lightdm htop nitrogen dhcpcd alacritty xmonad xmonad-contrib -y
 
   echo -e "Enter your user account name"
   read account_name
@@ -61,7 +61,7 @@ if [ $question == "y" ]; then
 
   cd "/home/$account_name"
 
-  systemctl enable lightdm.service
+  sudo systemctl enable lightdm.service
 
   echo "[Info] Cleaning up temp files"
 
