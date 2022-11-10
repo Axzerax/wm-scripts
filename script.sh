@@ -18,7 +18,10 @@ if [ $question == "y" ]; then
 
   echo "Making temp directories"
   
-  mkdir "/home/$account_name/setup_files"
+  
+  
+  #mkdir "/home/$account_name/setup_files"
+  mkdir "/home/$account_name/.config"
   mkdir "/home/$account_name/.xmonad"
 
   git clone "https://github.com/Axzerax/Forest" "/home/$account_name/setup_files"
