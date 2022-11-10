@@ -16,6 +16,8 @@ if [ $question == "y" ]; then
   read account_name
 
 
+  echo "Making temp directories"
+  
   mkdir "/home/$account_name/setup_files"
   mkdir "/home/$account_name/.xmonad"
 
