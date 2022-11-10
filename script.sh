@@ -68,6 +68,8 @@ if [ $question == "y" ]; then
   #rm -rf "/home/$account_name/setup_files"
 
   echo "[Requirement] You need to update the xmonad.hs file!"
+  
+  echo "[Requirment] Add --experimental-backends to the xmonad.hs picom line!"
 
   echo "Finished!"
 else
