@@ -10,7 +10,7 @@ if [ $question == "y" ]; then
   echo "Starting.."
 
   pacman -Syu -y
-  pacman -S ghc picom patch make firefox xorg xorg-xrdb xterm polybar lightdm-gtk-greeter wget pulseaudio ttf-font-awesome alsa-utils lightdm htop nitrogen dhcpcd alacritty xmonad xmonad-contrib -y
+  pacman -S ghc picom patch make firefox fish xorg xorg-xrdb xterm polybar lightdm-gtk-greeter wget pulseaudio ttf-font-awesome alsa-utils lightdm htop nitrogen dhcpcd alacritty xmonad xmonad-contrib -y
 
   echo -e "Enter your user account name"
   read account_name
