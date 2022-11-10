@@ -65,7 +65,7 @@ if [ $question == "y" ]; then
 
   echo "[Info] Cleaning up temp files"
 
-  rm -rf "/home/$account_name/setup_files"
+  #rm -rf "/home/$account_name/setup_files"
 
   echo "[Requirement] You need to update the xmonad.hs file!"
 
