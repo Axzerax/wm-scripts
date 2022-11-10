@@ -29,29 +29,29 @@ if [ $question == "y" ]; then
   mkdir "/home/$account_name/Documents"
   mkdir "/home/$account_name/Documents/Wallpaper"
 
-  mv "/home/$account_name/setup_files/wallpaper/*" "/home/$account_name/Documents/Wallpaper"
+  mv "/home/$account_name/setup_files/wallpaper"/* "/home/$account_name/Documents/Wallpaper"
 
-  mv "/home/$account_name/setup_files/xmonad/*" "/home/$account_name/.xmonad"
+  mv "/home/$account_name/setup_files/xmonad"/* "/home/$account_name/.xmonad"
 
   mkdir "/home/$account_name/.config/picom"
 
-  mv "/home/$account_name/setup_files/picom/*" "/home/$account_name/.config/picom"
+  mv "/home/$account_name/setup_files/picom"/* "/home/$account_name/.config/picom"
 
   mkdir "/home/$account_name/.config/polybar"
 
-  mv "/home/$account_name/setup_files/polybar/*" "/home/$account_name/.config/polybar"
+  mv "/home/$account_name/setup_files/polybar"/* "/home/$account_name/.config/polybar"
 
   chmod +x "/home/$account_name/.config/polybar/launch.sh"
 
   mkdir "/home/$account_name/.config/alacritty"
 
-  mv "/home/$account_name/setup_files/alacritty/*" "/home/$account_name/.config/alacritty"
+  mv "/home/$account_name/setup_files/alacritty"/* "/home/$account_name/.config/alacritty"
 
   echo "Xcursor.size: 16" > "/home/$account_name/.Xresources"
 
   git clone "https://gitlab.com/dwt1/dmenu-distrotube.git" "/home/$account_name/setup_files"
 
-  cp "/home/$account_name/setup_files/dmenu/colors/*" "/home/$account_name/setup_files/dmenu-distrotube/colors"
+  cp "/home/$account_name/setup_files/dmenu/colors"/* "/home/$account_name/setup_files/dmenu-distrotube/colors"
 
   mv "/home/$account_name/setup_files/dmenu-distrotube/colors/doom-green.h" "/home/$account_name/setup_files/dmenu-distrotube/colors/doom-one.h"
 
