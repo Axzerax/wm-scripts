@@ -20,7 +20,7 @@ if [ $question == "y" ]; then
   
   
   
-  #mkdir "/home/$account_name/setup_files"
+  mkdir "/home/$account_name/setup_files"
   mkdir "/home/$account_name/.config"
   mkdir "/home/$account_name/.xmonad"
 
