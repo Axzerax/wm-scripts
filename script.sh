@@ -51,11 +51,11 @@ if [ $question == "y" ]; then
 
   git clone "https://gitlab.com/dwt1/dmenu-distrotube" "/home/$account_name/setup_files/dmenu_clone"
 
-  cp "/home/$account_name/setup_files/dmenu/colors"/* "/home/$account_name/setup_files/dmenu-distrotube/colors"
+  cp "/home/$account_name/setup_files/dmenu/colors"/* "/home/$account_name/setup_files/dmenu_clone/colors"
 
-  mv "/home/$account_name/setup_files/dmenu-distrotube/colors/doom-green.h" "/home/$account_name/setup_files/dmenu-distrotube/colors/doom-one.h"
+  mv "/home/$account_name/setup_files/dmenu-distrotube/colors/doom-green.h" "/home/$account_name/setup_files/dmenu_clone/colors/doom-one.h"
 
-  cd "/home/$account_name/setup_files/dmenu-distrotube"
+  cd "/home/$account_name/setup_files/dmenu_clone"
 
   make clean install && rm config.h
 
