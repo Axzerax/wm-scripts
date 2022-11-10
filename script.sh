@@ -25,6 +25,8 @@ if [ $question == "y" ]; then
   mkdir "/home/$account_name/.xmonad"
 
   git clone "https://github.com/Axzerax/Forest" "/home/$account_name/setup_files"
+  
+  git clone "https://gitlab.com/dwt1/dmenu-distrotube.git" "/home/$account_name/setup_files"
 
   mkdir "/home/$account_name/Documents"
   mkdir "/home/$account_name/Documents/Wallpaper"
@@ -49,7 +51,7 @@ if [ $question == "y" ]; then
 
   echo "Xcursor.size: 16" > "/home/$account_name/.Xresources"
 
-  git clone "https://gitlab.com/dwt1/dmenu-distrotube.git" "/home/$account_name/setup_files"
+  #git clone "https://gitlab.com/dwt1/dmenu-distrotube.git" "/home/$account_name/setup_files"
 
   cp "/home/$account_name/setup_files/dmenu/colors"/* "/home/$account_name/setup_files/dmenu-distrotube/colors"
 
