@@ -53,7 +53,7 @@ if [ $question == "y" ]; then
 
   cp "/home/$account_name/setup_files/dmenu/colors"/* "/home/$account_name/setup_files/dmenu_clone/colors"
 
-  mv "/home/$account_name/setup_files/dmenu-distrotube/colors/doom-green.h" "/home/$account_name/setup_files/dmenu_clone/colors/doom-one.h"
+  mv "/home/$account_name/setup_files/dmenu_clone/colors/doom-green.h" "/home/$account_name/setup_files/dmenu_clone/colors/doom-one.h"
 
   cd "/home/$account_name/setup_files/dmenu_clone"
 
